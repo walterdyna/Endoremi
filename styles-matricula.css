@@ -41,6 +41,10 @@ body {
     transition: color 0.3s;
 }
 
+#matricula {
+    color: #FF0000; /* Vermelho puro */
+}
+
 .nav-links a:hover {
     color: gray;
 }
