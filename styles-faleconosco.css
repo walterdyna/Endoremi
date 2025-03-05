@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Cor de fundo do body para visualização */
+    padding: 0.1cm 0; /* Distância de 1cm cima e baixo */
+}
+
+.logo-super {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.1cm 0; /* Distância de 1cm cima e baixo */
+    background-color: transparent; /* Assegura que o fundo do contêiner seja transparente */
+}
+
+.img-logo {
+    width: 500px;
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 1cm; /* Espaço entre a imagem e o texto */
+}
+
+h1 {
+    font-size: 60px;
+    color: #333; /* Cor do texto */
+    margin: 0.1cm 0; /* Espaço de 1cm cima e baixo */
+}
+
+.texto-de-abertura, h2 {
+    font-size: 50px;
+    color: #333; /* Cor do texto */
+    margin: 1cm 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+.links-interacao {
+    margin: 1cm 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove o traço embaixo do link */
+    color: black; /* Cor dos links */
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.links {
+    margin-left: 40px;
+}
+
+.nav-links a:hover {
+    color: black;
+    font-size: 40px;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2rem;
+    background-color: #333; /* Cor de fundo da caixa */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 2cm 0;
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    color: white; /* Cor do texto */
+}
+
+.contato-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contato-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contato-container label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contato-container input, .contato-container textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contato-container button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Ícone do WhatsApp fixo no lado inferior direito */
+.whatsapp-fixo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    animation: vibrate 0.2s infinite, bounce 0.3s infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.whatsapp-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Media

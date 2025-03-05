@@ -1,0 +1,356 @@
+.historia-escola {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 3rem;
+    max-width: 1200px;
+    overflow-y: auto;
+}
+
+.historia-titulos {
+    font-size: 2.6rem;
+    line-height: 1.6;
+}
+
+.historia-texto {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.historia-escola:hover.historia-texto,
+.historia-escola:focus.historia-texto,
+.historia-escola:active.historia-texto {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+   .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   .nav-links a {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+   .historia-escola {
+        padding: 2.5rem;
+    }
+   .historia-titulos {
+        font-size: 2.4rem;
+    }
+   .historia-texto {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+   .historia-escola {
+        padding: 2.2rem;
+    }
+   .historia-titulos {
+        font-size: 2.2rem;
+    }
+   .historia-texto {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   .historia-escola {
+        padding: 2rem;
+    }
+   .historia-titulos {
+        font-size: 2.0rem;
+    }
+   .historia-texto {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+   .historia-escola {
+        padding: 1.8rem;
+    }
+   .historia-titulos {
+        font-size: 1.9rem;
+    }
+   .historia-texto {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+   .historia-escola {
+        padding: 1.7rem;
+    }
+   .historia-titulos {
+        font-size: 1.8rem;
+    }
+   .historia-texto {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (max-width: 735px) {
+   .historia-escola {
+        padding: 1.6rem;
+    }
+   .historia-titulos {
+        font-size: 1.7rem;
+    }
+   .historia-texto {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+   .video-grid {
+        grid-template-columns: 1fr;
+    }
+   .whatsapp-fixo,.topo-fixo {
+        display: none;
+    }
+   .nav-links a {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+   .historia-escola {
+        padding: 1.5rem;
+    }
+   .historia-titulos {
+        font-size: 1.6rem;
+    }
+   .historia-texto {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+   .historia-escola {
+        padding: 1.4rem;
+    }
+   .historia-titulos {
+        font-size: 1.5rem;
+    }
+   .historia-texto {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-links {
+         display: none;
+     }
+     h1 {
+         font-size: 24px;
+     }
+     h2 {
+         font-size: 20px;
+     }
+     h3 {
+         font-size: 16px;
+     }
+     #historia-titulo-nome{
+         font-size: 14px
+     }
+     h4 {
+         font-size: 14px;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 475px) {
+    .historia-escola {
+         padding: 1.3rem;
+     }
+    .historia-titulos {
+         font-size: 1.4rem;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 470px) {
+    .historia-escola {
+         padding: 1.2rem;
+     }
+    .historia-titulos {
+         font-size: 1.3rem;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 460px) {
+    .historia-escola {
+         padding: 1.1rem;
+     }
+    .historia-titulos {
+         font-size: 1.2rem;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 430px) {
+    .historia-escola {
+         padding: 1rem;
+     }
+    .historia-titulos {
+         font-size: 1.1rem;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 400px) {
+    .historia-escola {
+         padding: 0.9rem;
+     }
+    .historia-titulos {
+         font-size: 1rem;
+     }
+     .historia-texto {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ @media screen and (max-width: 390px) {
+    .historia-escola {
+         padding: 0.8rem;
+     }
+    .historia-titulos {
+         font-size: 1.0rem;
+     }
+    .historia-texto {
+         font-size: 0.9rem;
+     }
+ }
+ 
+ @media screen and (max-width: 370px) {
+    .historia-escola {
+         padding: 0.7rem;
+     }
+    .historia-titulos {
+         font-size: 0.8rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ 
+ @media screen and (max-width: 360px) {
+    .historia-escola {
+         padding: 0.6rem;
+     }
+    .historia-titulos {
+         font-size: 0.7rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ 
+ @media screen and (max-width: 350px) {
+    .historia-escola {
+         padding: 0.5rem;
+     }
+    .historia-titulos {
+         font-size: 0.6rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ 
+ @media screen and (max-width: 345px) {
+    .historia-escola {
+         padding: 0.4rem;
+     }
+    .historia-titulos {
+         font-size: 0.5rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ 
+ @media screen and (max-width: 300px) {
+    .historia-escola {
+         padding: 0.3rem;
+     }
+    .historia-titulos {
+         font-size: 0.4rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ 
+ @media screen and (max-width: 275px) {
+    .historia-escola {
+         padding: 0.2rem;
+     }
+    .historia-titulos {
+         font-size: 0.3rem;
+     }
+    .historia-texto {
+         font-size: 0.1rem;
+     }
+ }
+ @media screen and (max-width: 200px) {
+  .historia-escola {
+        padding: 0.1rem;
+    }
+  .historia-titulos {
+        font-size: 0.2rem;
+    }
+  .historia-texto {
+        font-size: 0.1rem;
+    }
+}

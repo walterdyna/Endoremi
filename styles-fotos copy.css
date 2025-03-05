@@ -1,0 +1,140 @@
+/* Container principal da galeria de fotos */
+.fotos-galeria {
+  width: 100%;
+  max-width: 1200px; /* Ajuste o valor conforme necessário para caber 3 imagens */
+  max-height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Centraliza o texto do título */
+  margin: 0 auto; /* Centraliza horizontalmente */
+ }
+
+/* Estilo do título da galeria */
+.titulo-galeria {
+  margin: 0 0 20px 0;
+}
+
+/* Container da galeria de fotos */
+.galeria-de-fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  }
+
+/* Container do carrossel */
+.carousel {
+  width: 100%;
+  max-width: 1200px; /* Ajuste o valor conforme necessário para caber 3 imagens */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden; /* Impede a barra de rolagem lateral */
+  position: relative;
+  border-radius: 50px;
+}
+
+/* Container interno do carrossel */
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+/* Imagens do carrossel */
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Animação suave */
+}
+
+/* Estilo das imagens do carrossel */
+.carousel-images img {
+  width: 310px; /* Largura das imagens */
+  height: auto; /* Altura automática para manter proporção */
+  margin-right: 5px; /* Espaçamento entre imagens */
+}
+
+/* Navegação do carrossel */
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Espaça os botões de navegação */
+  padding: 0 1cm; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+/* Botões de navegação do carrossel */
+.carousel-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ccc; /* Cor padrão dos botões */
+}
+
+/* Estilo ao passar o mouse sobre os botões de navegação */
+.carousel-nav button:hover {
+  color: #333; /* Cor dos botões ao passar o mouse */
+}
+
+/* Container do espelho */
+.carousel-mirror {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilo das imagens do espelho */
+.carousel-mirror img {
+  width: 100px; /* Largura das imagens do espelho */
+  height: auto; /* Altura automática para manter proporção */
+  margin: 0 10px; /* Espaçamento entre imagens */
+}
+
+/* Estilos para telas maiores que 1000px */
+.carousel-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.carousel-images img {
+  width: 33.33%; /* 3 imagens por linha */
+  margin: 10px;
+}
+
+/* Estilos para telas menores que 1000px */
+@media (max-width: 1000px) {
+  .carousel-images {
+    display: block;
+  }
+  .carousel-images img {
+    width: 100%; /* 1 imagem por linha */
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para telas menores que 900px */
+@media (max-width: 900px) {
+  .carousel-images img {
+    width: 100%; /* 1 imagem por linha */
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para telas menores que 800px */
+@media (max-width: 800px) {
+  .carousel-images img {
+    width: 100%; /* 1 imagem por linha */
+    margin: 10px 0;
+  }
+}
+
+/* ... e assim por diante para cada breakpoint */

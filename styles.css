@@ -1,0 +1,457 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('./img/background.png'); /* Caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa no fundo */
+    padding: 0.1cm 0; /* Distância de 1cm cima e baixo */
+}
+
+.logo-super {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.1cm 0; /* Distância de 1cm cima e baixo */
+    background-color: transparent; /* Assegura que o fundo do contêiner seja transparente */
+}
+
+.img-logo {
+    width: 500px;
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 1cm; /* Espaço entre a imagem e o texto */
+}
+
+.img-logo {
+    max-width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 1cm; /* Espaço entre a imagem e o texto */
+    display: block; /* Centraliza a imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+h1 {
+    font-size: 36px;
+    color: #333; /* Cor do texto */
+    margin: 0.1cm 0; /* Espaço de 1cm cima e baixo */
+}
+
+.texto-de-abertura, h2 {
+    font-size: 30px;
+    color: #333; /* Cor do texto */
+    margin: 1cm 0;
+    font-weight: 100;
+    text-align: center;
+}
+
+.historia-titulo-nome {
+    font-size: 24px;
+    color: #333; /* Cor do texto */
+    margin: 0.1cm 0; /* Espaço de 1cm cima e baixo */
+}
+
+h4 {
+    font-size: 20px;
+    color: #333; /* Cor do texto */
+    margin: 0.1cm 0; /* Espaço de 1cm cima e baixo */
+}
+
+.links-interacao {
+    margin: 1cm 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove o traço embaixo do link */
+    color: black; /* Cor dos links */
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.links {
+    margin-left: 40px;
+}
+
+.nav-links a:hover {
+    color: black;
+    
+}
+
+.galeria-de-fotos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-height: 500px; /* Ajuste a altura conforme necessário para mostrar 6 vídeos */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+}
+
+.galeria-de-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.galeria-videos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-height: 500px; /* Ajuste a altura conforme necessário para mostrar 6 vídeos */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.video-item {
+    padding: 200px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 30px;
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-item-logo {
+    width: 275px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.video-item.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #000;
+}
+
+.video-item.fullscreen iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-item:hover {
+    cursor: pointer;
+}
+
+/* Ícone do WhatsApp fixo no lado inferior direito */
+.whatsapp-fixo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-fixo:hover {
+    animation: vibrate 0.2s infinite, bounce 0.3s infinite;
+}
+
+/* Ícone do Facebook fixo no lado inferior esquerdo */
+.facebook-fixo {
+    position: fixed;
+    left: 30px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.facebook-fixo:hover {
+    animation: vibrate 0.2s infinite, bounce 0.3s infinite;
+}
+
+.facebook-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ícone do Instagram fixo no lado inferior esquerdo */
+.instagram-fixo {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.instagram-fixo:hover {
+    animation: vibrate 0.2s infinite, bounce 0.3s infinite;
+}
+
+.instagram-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+.novo-milenio-fixo {
+    position: fixed;
+    left: 30px;
+    bottom: 170px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.novo-milenio-fixo:hover {
+    animation: vibrate 0.2s infinite, bounce 0.3s infinite;
+}
+
+.novo-milenio-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ícone de Doação fixo no lado inferior direito */
+.doacao-fixo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px; /* Ajuste conforme necessário para posicionar acima do ícone do WhatsApp */
+    width: 50%; /* 50% do tamanho da logo */
+    max-width: 250px; /* Limite máximo para a largura */
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.doacao-fixo img {
+    width: 70%;
+    height: auto;
+}
+
+.doacao-fixo-foma{
+    position: fixed;
+    left: 100px;
+    bottom: 30px; /* Ajuste conforme necessário para posicionar acima do ícone do WhatsApp */
+    width: 60%; /* 50% do tamanho da logo */
+    max-width: 250px; /* Limite máximo para a largura */
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.doacao-fixo-foma img {
+    width: 80%;
+    height: auto;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-2px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.whatsapp-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ícone de Voltar ao Topo fixo no lado inferior direito */
+.topo-fixo {
+    position: fixed;
+    right: 30px;
+    bottom: 100px; /* Ajuste a distância para posicionar acima do ícone do WhatsApp */
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.topo-fixo:hover {
+    animation: bounce 0.3s infinite;
+}
+
+.topo-fixo img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1000px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-links a {
+        font-size: 35px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .whatsapp-fixo, .topo-fixo {
+        display: none;
+    }
+    .nav-links a {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #redes-sociais {
+      display: none;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+  }
+
+@media (max-width: 500px) {
+    .nav-links {
+        display: none;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+    h4 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .nav-links a {
+        font-size: 25px;
+    }
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    .whatsapp-fixo, .topo-fixo {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    h1, .texto-de-abertura, h2 {
+        font-size: 40px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    #historia-titulo-nome{
+        font-size: 14px
+    }
+    h4 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 200px) {
+    h1, .texto-de-abertura, h2 {
+        font-size: 30px;
+    }
+}
