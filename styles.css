@@ -13,8 +13,8 @@ body {
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-attachment: fixed; /* Faz a imagem ficar fixa no fundo */
-    padding: 0.1cm 0; /* Distância de 1cm cima e baixo */
+    background-attachment: fixed; /* Efeito parallax em telas grandes */
+    padding: 0.1cm 0;
 }
 
 .logo-super {
@@ -309,6 +309,13 @@ h4 {
 }
 
 /* Media Queries para responsividade */
+
+@media (max-width: 1024px) {
+    body {
+        background-size: contain; /* Evita cortes na imagem */
+        background-attachment: scroll; /* Remove o efeito fixo, pois pode causar bugs no mobile */
+    }
+}
 @media (max-width: 1000px) {
     .video-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -330,6 +337,12 @@ h4 {
     }
     p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* Faz a imagem cobrir toda a tela novamente */
     }
 }
 
@@ -393,6 +406,12 @@ h4 {
     }
     p {
         font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background-size: contain; /* Ajuste fino para telas pequenas */
     }
 }
 
